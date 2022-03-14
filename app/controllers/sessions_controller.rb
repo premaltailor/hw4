@@ -15,7 +15,7 @@ class SessionsController < ApplicationController
         redirect_to "/sessions/new"
       end
     else
-      flash[:notice] = "Not signed in."
+      flash[:notice] = "Incorrect."
       redirect_to "/sessions/new"
     end
   end

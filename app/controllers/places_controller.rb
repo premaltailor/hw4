@@ -15,7 +15,7 @@ class PlacesController < ApplicationController
   def create
     if @current_user
       @place = Place.new(params["place"])
-      @place.user_id = @current_user.id
+      # @place.user_id = @current_user.id
       @place.save
     else
         flash[:notice] = "Login First"
